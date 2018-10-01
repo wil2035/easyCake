@@ -1,0 +1,82 @@
+*Ruby*
+
+  •     Tener instalado ruby on rails (http://rubyonrails.org.es/instala.html).
+  •     En el drive tienen la guía 10 de Ruby.
+  •     Desarrollar de forma individual la siguiente actividad "Ruby en 20 minutos" https://www.ruby-lang.org/es/documentation/quickstart/
+  •     Desarrollar de forma individual la siguiente actividad "Ruby en 30 minutos" https://ruby.github.io/TryRuby/
+
+Otros documentos de apoyo:
+
+  •     http://rubytutorial.wikidot.com/ o adjunto "aprende-a-programar-con-ruby.pdf"
+  •     http://es.tldp.org/Manuales-LuCAS/doc-guia-usuario-ruby/guia-usuario-ruby.pdf o adjunto
+  •     http://www.rubyist.net/~slagell/ruby/
+  •     https://codigofacilito.com/cursos/ruby-2
+
+
+*Rails*
+
+  •     Lectura rápida: https://rubyonrails.org/everything-you-need/
+  •     En el drive tienen la guía de inicio "Guia 11 Ruby On Rails.pdf" para empezar las prácticas en rails.
+  •     Realizar el taller del blog: https://guides.rubyonrails.org/getting_started.html o desde http://www.guiasrails.es/getting_started.html
+
+*El blog debe subirse a github en un repo que tenga este formato:* "blog-nombredelproyectosinespacios-rails", ejemplo "blog-medicionpolicial-rails"
+
+Después de esto podrían si quieren trabajar el servicio api con ruby on rails, sin embargo como notaron, con loopback lo desarrollan mas rápido, pueden tomar esta doc para desarrollar apis con rails: https://guides.rubyonrails.org/api_app.html
+
+Para los equipos que decidieran hacer el backend o apis usando ruby on rails, les complemento el material con las *guías adjuntas 12, 13, 16 y 18* (ver drive) para que tengan apoyo sobre temas de conexión a la base de datos, temas de autenticación y  como subir su backend a Heroku
+
+*Importante:* toda la clase sin excepción debe tomar como referencia estos documentos para el examen de certificación sin importar si su backend se basa en php, oracle, .net, mysql, node, loopback, etc
+
+Como apoyo al desarrollo de apis les comparto también otros referentes:
+
+*Ruby on rails para crear api rest (servicios web)*
+
+•     http://guides.rubyonrails.org/api_app.html (documento oficial)
+•     https://stories.devacademy.la/que-es-y-como-crear-una-api-en-ruby-on-rails-aa4f1e25d3ac
+•     https://code.tutsplus.com/es/articles/crafting-apis-with-rails--cms-27695
+•     https://medium.com/@positivecarlos/api-desarrollada-con-ruby-on-rails-en-modo-api-usando-jwt-para-autenticar-26f91b71d194
+•     https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
+•     https://medium.com/@alejandroroa/creando-una-api-en-rails-5-con-serializer-buenas-practicas-json-api-bda0a5f75c5e
+•     https://www.simplify.ba/articles/2016/06/18/creating-rails5-api-only-application-following-jsonapi-specification/
+•     https://www.evernote.com/shard/s733/sh/8ef958b4-f8ec-4d4b-ba48-46f2f8e5d6cd/0f6e6eaa774b6aff037b9e724f59302c
+•     https://sourcey.com/building-the-prefect-rails-5-api-only-app/
+•     https://www.cookieshq.co.uk/posts/how-to-use-the-new-rails-5-api-feature
+
+
+*Qué es scaffolding?*
+
+• https://gist.github.com/Elicia/8530046
+
+
+Con esto ya ustedes tienen las bases para el desarrollo de sus servicios web con Ruby.
+
+Les comparto una manera de levantar el servidor con un process manager de node y como usar configuraciones de ambiente:
+http://pm2.keymetrics.io/
+pm2.keymetrics.io
+PM2 ·
+Advanced process manager for production Node.js applications. Load balancer, logs facility, startup script, micro service management, at a glance.
+https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png
+http://pm2.keymetrics.io/docs/usage/environment/
+pm2.keymetrics.io
+Environment management · PM2
+Advanced process manager for production Node.js applications. Load balancer, logs facility, startup script, micro service management, at a glance.
+https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png
+
+Script para generar el discovery, crearlo en un dir llamado 'bin' en el root del proyecto loopback y ejecutar con node, ah y modificarlo
+This file was deleted.
+discovery.js 
+'use strict'
+​
+const loopback = require('loopback')
+const promisify = require('util').promisify
+const fs = require('fs')
+
+Andrés Castillo [8:38 PM]
+joined #tecnologia.
+ Fundación Futuro - Piensa Digital is on a roll
+Your team’s now 31 members strong, with 2647 messages sent across 15 channels. You can track your team’s progress via the main menu.
+
+Show Me
+Message Input
+
+Message #tecnologia
