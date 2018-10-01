@@ -1,0 +1,20 @@
+{
+   "compilerOptions": {
+   "target": "ES5",        // Definir en que versión de JS nos gustaría convertir el .ts"
+   
+    experimentalDecorators": true,  //  Activar funciones experimentales, en este caso decorators      
+    "module": "system",   // Usar el modulo system 
+    "noImplicitAny": true, // Habilitar el uso de implicitos Any
+    "removeComments": true, // Remover todos los comentarios en nuestros archivos
+    "preserveConstEnums": true, // Manejar los enumerables como constantes, esto es muy recomendado                
+    "OutFile": "./tsc.js", // Donde vamos a tener el archivo resultante
+    "sourceMap": true// Para ver un log de la transpilación 
+   },
+   "include": [
+       "*"// Ver que archivos vamos a compilar, usar * indica que serán todos
+   ],
+   "exclude": [
+       "node_modules"// Agregar los archivos que no queremos incluir en la transpilación " 
+       **/*.spec.ts"
+   ]
+}
